@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Major+Mono+Display&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.index{
+    background-image: url('https://assets.onecompiler.app/43j5nagvj/43j5nbdxn/new128.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -50px;
+}
+
+.packages {
+    background-color: white;
+}
+
+html {
+    font-family:"Urbanist";
+    font-size: 18px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1.4rem;
+    background-color: white;
+    box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.2);
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.logo img:hover{
+    transform: rotate(-20deg) scale(1.2);
+}
+
+
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlinks a {
+    margin-left: 3rem;
+    text-decoration: none;
+    color: orangered;
+    transition: transform 0.2s ease;
+    font-size: 1.2rem;
+}
+
+.navlinks a:hover {
+    transform: scale(1.2);
+    color: orange;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 220px;
+    margin-left: 200px;
+    padding: 0;
+}
+
+.hero-text h1 {
+    font-size: 2.4rem;
+    color: orangered;
+    margin-bottom: 0rem;
+}
+
+.hero-text p {
+    max-width: 30%;
+    font-size: 1.4rem;
+
+}
+
+.btn img {
+    margin-left: 8.6rem;
+    color: orangered;
+    width: 150px;
+    height: auto;
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.btn img:hover{
+    transform: scale(1.2);
+}
+
+
+
+.packages-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem; 
+    margin-top: 8rem;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    max-width: 350px;
+    height: 300px;
+    flex: 1 1 300px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.card h1{
+    color: orangered;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 350px;         
+    width: 100%;
+    margin: 2rem auto 0 auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 2px 4px 16px 0px rgba(0,0,0,0.10);
+    font-size: 1rem;        
+}
+
+
+.registration input, .registration select {
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#priceDisplay {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orangered;
+}
+
+.button2 {
+    border-radius: 12px;
+    box-shadow: 2px 4px 16px 0px rgba(0,0,0,0.2);
+    height: 30px;
+    width: auto;
+    transition: transform 0.2s ease;
+}
+
+.button2:hover {
+    transform: scale(1.05);
+}
+
+.button2:active{
+    transform: scale(1.0);
+    color: rgba(253, 56, 22, 0.829)
+}

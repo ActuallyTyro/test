@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bookings">
+    <nav class="navbar">
+        
+        <div class="logo">
+            <a href="index.html"><img src="https://assets.onecompiler.app/43j5nagvj/43j5nbdxn/roologo.png"/></a>
+        </div>
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="bookings.html">Bookings</a>
+        </div>
+
+    </nav>
+
+    <div class="registration">
+        <input type="text" placeholder="First Name" required> 
+        <input type="text" placeholder="Last Name" required> 
+        <input type="text" placeholder="Credit Card" required> 
+        <input type="int" placeholder="CVV" required>
+        <input type="text" placeholder="MM" required>
+        <input type="text" placeholder="YY" required>
+        <select id="packageSelect">
+            <option value="standard">Standard Package</option>
+            <option value="premium">Premium Package</option>
+            <option value="holiday">Holiday Package</option>
+        </select>
+        
+        <div id="priceDisplay"> </div>
+        <button type="button" onclick="submitBooking()" class="button2">Submit</button>
+    
+    </div>
+
+
+<script>
+const prices = {
+    standard: "$500",
+    premium: "$1000",
+    holiday: "$1500"
+};
+
+const select = document.getElementById('packageSelect');
+const priceDisplay = document.getElementById('priceDisplay');
+
+
+select.addEventListener('change', function() {
+    priceDisplay.textContent = "Price: " + prices[select.value];
+});
+
+
+priceDisplay.textContent = "Price: " + prices[select.value];
+
+function submitBooking() {
+    alert("Booking submitted!");
+}
+</script>
+
+</body>
+</html>
+
+<!--
+Text inputs for: “First Name”, “Last Name”, “CreditCard”, “CVV”, “MM”, “YY”
+Dropdown: to choose one of the packages
+View the PRICE of the chosen package 
+
+-->
+
