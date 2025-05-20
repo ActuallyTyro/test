@@ -161,6 +161,7 @@ a{
 
 .button2:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .button2:active{
